@@ -1,5 +1,7 @@
+@use 'abstracts/variables' as *;
+
 body {
-  background-color: blue;
+  background-color: $baltic-sea;
   color: white;
   font-family: "Roboto", sans-serif;
 }
