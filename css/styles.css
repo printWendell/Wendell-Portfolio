@@ -44,6 +44,133 @@
   box-shadow: none;
 }
 
+.homepage-whoami {
+  height: 80vh;
+  margin-top: 8rem;
+}
+@media (max-width: 1200px) {
+  .homepage-whoami {
+    height: 60vh;
+  }
+}
+@media (max-width: 992px) {
+  .homepage-whoami {
+    height: 50vh;
+  }
+}
+@media (max-width: 768px) {
+  .homepage-whoami {
+    height: 30vh;
+  }
+}
+@media (max-width: 576px) {
+  .homepage-whoami {
+    height: 20vh;
+  }
+}
+
+.whoami-name {
+  color: white;
+}
+.whoami-name h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 75px;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1400px) {
+  .whoami-name h1 {
+    font-size: 60px;
+    margin-bottom: 2.3;
+  }
+}
+@media (max-width: 1200px) {
+  .whoami-name h1 {
+    font-size: 55px;
+    margin-bottom: 2.3;
+  }
+}
+@media (max-width: 992px) {
+  .whoami-name h1 {
+    font-size: 2.9rem;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .whoami-name h1 {
+    font-size: 2rem;
+  }
+}
+.whoami-name span {
+  color: #e7165a;
+}
+.whoami-name a {
+  color: #be1c68;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.whoami-name a svg::hover {
+  fill: red;
+}
+.whoami-name a .whoami-svg {
+  width: 2.8rem;
+}
+@media (max-width: 992px) {
+  .whoami-name a .whoami-svg {
+    width: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .whoami-name a .whoami-svg {
+    width: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .whoami-name a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .whoami-name a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 992px) {
+  .whoami-name {
+    text-align: center;
+  }
+}
+.whoami-name::after {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  content: "</>";
+  color: #818181;
+  font-size: 18vw;
+  font-weight: bold;
+  opacity: 0.11;
+}
+@media (max-width: 1400px) {
+  .whoami-name::after {
+    top: 55%;
+  }
+}
+@media (max-width: 1200px) {
+  .whoami-name::after {
+    top: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .whoami-name::after {
+    top: 35%;
+    left: 15%;
+  }
+}
+@media (max-width: 768px) {
+  .whoami-name::after {
+    display: none;
+  }
+}
+
 body {
   background-color: #1d1b24;
   color: white;

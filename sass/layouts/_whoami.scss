@@ -1,0 +1,97 @@
+@use "../abstracts/variables" as *;
+
+.homepage-whoami {
+  height: 80vh;
+  margin-top: 8rem;
+  @media (max-width: $xl-screen) {
+    height: 60vh;
+  }
+  @media (max-width: $lg-screen) {
+    height: 50vh;
+  }
+  @media (max-width: $md-screen) {
+    height: 30vh;
+  }
+  @media (max-width: $sm-screen) {
+    height: 20vh;
+  }
+}
+.whoami-name {
+  color: white;
+  h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 75px;
+    margin-bottom: 2rem;
+
+    @media (max-width: $xxl-screen) {
+      font-size: 60px;
+      margin-bottom: 2.3;
+    }
+    @media (max-width: $xl-screen) {
+      font-size: 55px;
+      margin-bottom: 2.3;
+    }
+    @media (max-width: $lg-screen) {
+      font-size: 2.9rem;
+      text-align: center;
+    }
+    @media (max-width: $sm-screen) {
+      font-size: 2rem;
+    }
+  }
+  span {
+    color: $ruby;
+  }
+  a {
+    color: $rose-red;
+    font-size: 1.8rem;
+    text-decoration: none;
+    svg {
+      &::hover {
+        fill: red;
+      }
+    }
+    .whoami-svg {
+      width: 2.8rem;
+      @media (max-width: $lg-screen) {
+        width: 2.5rem;
+      }
+      @media (max-width: $sm-screen) {
+        width: 2rem;
+      }
+    }
+    @media (max-width: $lg-screen) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: $sm-screen) {
+      font-size: 1.2rem;
+    }
+  }
+  @media (max-width: $lg-screen) {
+    text-align: center;
+  }
+
+  &::after {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    content: "</>";
+    color: $gray;
+    font-size: 18vw;
+    font-weight: bold;
+    opacity: 0.11;
+    @media (max-width: $xxl-screen) {
+      top: 55%;
+    }
+    @media (max-width: $xl-screen) {
+      top: 50%;
+    }
+    @media (max-width: $lg-screen) {
+      top: 35%;
+      left: 15%;
+    }
+    @media (max-width: $md-screen) {
+      display: none;
+    }
+  }
+}
