@@ -1,3 +1,49 @@
+.navbar {
+  padding: 30px;
+}
+
+.navbar-dark .navbar-brand {
+  color: #be1c68;
+  width: 100px;
+  padding: 0px 10px;
+  font-weight: 900;
+  font-size: 3.1rem;
+  letter-spacing: 3.6px;
+}
+.navbar-dark .navbar-brand:hover {
+  text-shadow: 2px 2px #ff0000;
+  transition: ease-in 0.15s;
+}
+@media (max-width: 768px) {
+  .navbar-dark .navbar-brand {
+    font-size: 2rem;
+  }
+}
+.navbar-dark .navbar-nav {
+  margin-top: 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e7165a;
+  transition: ease-in 0.15s;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+.navbar-dark .navbar-toggler:focus,
+.navbar-dark .navbar-toggler:active,
+.navbar-dark .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 body {
   background-color: #1d1b24;
   color: white;

@@ -1,4 +1,5 @@
 @use 'abstracts/variables' as *;
+@use './layouts/navbar';
 
 body {
   background-color: $baltic-sea;
