@@ -61,10 +61,7 @@
       }
     }
     @media (max-width: $lg-screen) {
-      font-size: 1.6rem;
-    }
-    @media (max-width: $sm-screen) {
-      font-size: 1.2rem;
+      display: none;
     }
   }
   @media (max-width: $lg-screen) {
@@ -92,6 +89,65 @@
     }
     @media (max-width: $md-screen) {
       display: none;
+    }
+  }
+}
+
+.whoami-text {
+  code {
+    .code-ptag {
+      margin-left: 2rem;
+      @media (max-width: $xl-screen) {
+        margin-left: 1.5rem;
+      }
+    }
+    .code-p {
+      margin-left: 4rem;
+      @media (max-width: $xl-screen) {
+        margin-left: 3rem;
+      }
+      @media (max-width: $md-screen) {
+        margin: 0 auto;
+      }
+    }
+    .code-ptag,
+    .code-divtag {
+      color: $ksu-purple;
+      @media (max-width: $lg-screen) {
+        display: none;
+      }
+    }
+    .tag-class {
+      color: $deep-purple;
+    }
+    .tag-class--name {
+      color: $rose-red;
+    }
+    @media (max-width: $lg-screen) {
+      text-align: center;
+    }
+    p {
+      border-right: 0.15em solid transparent;
+      color: white;
+      display: block;
+      font-size: 25px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      white-space: nowrap;
+      width: auto;
+      @media (max-width: $xxl-screen) {
+        font-size: 1.3rem;
+      }
+      @media (max-width: $xl-screen) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: $lg-screen) {
+        margin-bottom: 0;
+      }
+      @media (max-width: $md-screen) {
+        font-size: 1rem;
+        white-space: normal;
+      }
     }
   }
 }

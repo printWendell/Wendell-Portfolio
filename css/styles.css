@@ -126,12 +126,7 @@
 }
 @media (max-width: 992px) {
   .whoami-name a {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 576px) {
-  .whoami-name a {
-    font-size: 1.2rem;
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -168,6 +163,80 @@
 @media (max-width: 768px) {
   .whoami-name::after {
     display: none;
+  }
+}
+
+.whoami-text code .code-ptag {
+  margin-left: 2rem;
+}
+@media (max-width: 1200px) {
+  .whoami-text code .code-ptag {
+    margin-left: 1.5rem;
+  }
+}
+.whoami-text code .code-p {
+  margin-left: 4rem;
+}
+@media (max-width: 1200px) {
+  .whoami-text code .code-p {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .whoami-text code .code-p {
+    margin: 0 auto;
+  }
+}
+.whoami-text code .code-ptag,
+.whoami-text code .code-divtag {
+  color: #522b86;
+}
+@media (max-width: 992px) {
+  .whoami-text code .code-ptag,
+.whoami-text code .code-divtag {
+    display: none;
+  }
+}
+.whoami-text code .tag-class {
+  color: #8e2375;
+}
+.whoami-text code .tag-class--name {
+  color: #be1c68;
+}
+@media (max-width: 992px) {
+  .whoami-text code {
+    text-align: center;
+  }
+}
+.whoami-text code p {
+  border-right: 0.15em solid transparent;
+  color: white;
+  display: block;
+  font-size: 25px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+@media (max-width: 1400px) {
+  .whoami-text code p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .whoami-text code p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 992px) {
+  .whoami-text code p {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .whoami-text code p {
+    font-size: 1rem;
+    white-space: normal;
   }
 }
 
