@@ -1,6 +1,7 @@
 @use 'abstracts/variables' as *;
 @use './layouts/navbar';
 @use './layouts/whoami';
+@use './layouts/project-section';
 
 body {
   background-color: $baltic-sea;

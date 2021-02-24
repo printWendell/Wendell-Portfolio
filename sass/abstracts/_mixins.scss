@@ -1,0 +1,22 @@
+@use './variables' as *;
+
+@mixin sectionHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: $gray;
+  font-size: 7.5vw;
+  font-weight: bolder;
+  opacity: 0.11;
+  letter-spacing: 3px;
+  clear: both;
+  text-shadow: 10px 10px 2px black;
+  @media (max-width: $md-screen) {
+    font-size: 10vw;
+    margin: 1.6rem 0;
+  }
+  @media (max-width: $sm-screen) {
+    font-size: 12vw;
+  }
+}
