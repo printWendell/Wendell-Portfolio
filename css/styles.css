@@ -107,6 +107,8 @@
   color: #be1c68;
   font-size: 1.8rem;
   text-decoration: none;
+  position: relative;
+  z-index: 10;
 }
 .whoami-name a svg::hover {
   fill: red;
@@ -230,16 +232,84 @@
 }
 @media (max-width: 992px) {
   .whoami-text code p {
+    font-size: 1.4rem;
     margin-bottom: 0;
   }
 }
 @media (max-width: 768px) {
   .whoami-text code p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     white-space: normal;
   }
 }
+@media (max-width: 576px) {
+  .whoami-text code p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .whoami-text code p:nth-child(1) {
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end 1.5;
+  }
+  .whoami-text code p:nth-child(2) {
+    opacity: 0;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end 0.8, slidein 1s ease 3.5s forwards;
+    animation-delay: 0.9s;
+  }
+  .whoami-text code p:nth-child(3) {
+    opacity: 0;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end 1.6, slidein 1s ease 3.5s forwards;
+    animation-delay: 1.6s;
+  }
+  .whoami-text code p:nth-child(4) {
+    display: inline-block;
+    opacity: 0;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end 1.5, slidein 1s ease 3.5s forwards;
+    animation-delay: 2.9s;
+  }
+  .whoami-text code p:nth-child(6) {
+    opacity: 0;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end 1.5, slidein 1s ease 3.5s forwards;
+    animation-delay: 3.7s;
+  }
+  .whoami-text code p:nth-child(7) {
+    opacity: 0;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end 0.3, slidein 1s ease 3.5s forwards;
+    animation-delay: 4.7s;
+  }
+  .whoami-text code p:nth-child(8) {
+    display: inline-block;
+    opacity: 0;
+    animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite, slidein 1s ease 3.5s forwards;
+    animation-delay: 5s;
+  }
+}
 
+@keyframes typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+@keyframes slidein {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+}
 body {
   background-color: #1d1b24;
   color: white;
