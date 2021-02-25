@@ -7,13 +7,19 @@
     height: 60vh;
   }
   @media (max-width: $lg-screen) {
-    height: 50vh;
+    height: 40vh;
   }
   @media (max-width: $md-screen) {
-    height: 30vh;
+    height: 35vh;
   }
   @media (max-width: $sm-screen) {
-    height: 20vh;
+    margin-top: 4rem;
+    height: 30vh;
+  }
+  @media (max-width: $xs-screen) {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    height: 50%;
   }
 }
 .whoami-name {
@@ -79,17 +85,7 @@
     font-size: 18vw;
     font-weight: bold;
     opacity: 0.11;
-    @media (max-width: $xxl-screen) {
-      top: 55%;
-    }
-    @media (max-width: $xl-screen) {
-      top: 50%;
-    }
     @media (max-width: $lg-screen) {
-      top: 35%;
-      left: 15%;
-    }
-    @media (max-width: $md-screen) {
       display: none;
     }
   }
@@ -148,11 +144,14 @@
         margin-bottom: 0;
       }
       @media (max-width: $md-screen) {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         white-space: normal;
       }
       @media (max-width: $sm-screen) {
         font-size: 1rem;
+      }
+      @media (max-width: $xs-screen) {
+        font-size: 0.8rem;
       }
     }
 

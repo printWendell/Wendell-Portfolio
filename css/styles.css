@@ -55,17 +55,25 @@
 }
 @media (max-width: 992px) {
   .homepage-whoami {
-    height: 50vh;
+    height: 40vh;
   }
 }
 @media (max-width: 768px) {
   .homepage-whoami {
-    height: 30vh;
+    height: 35vh;
   }
 }
 @media (max-width: 576px) {
   .homepage-whoami {
-    height: 20vh;
+    margin-top: 4rem;
+    height: 30vh;
+  }
+}
+@media (max-width: 480px) {
+  .homepage-whoami {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    height: 50%;
   }
 }
 
@@ -146,23 +154,7 @@
   font-weight: bold;
   opacity: 0.11;
 }
-@media (max-width: 1400px) {
-  .whoami-name::after {
-    top: 55%;
-  }
-}
-@media (max-width: 1200px) {
-  .whoami-name::after {
-    top: 50%;
-  }
-}
 @media (max-width: 992px) {
-  .whoami-name::after {
-    top: 35%;
-    left: 15%;
-  }
-}
-@media (max-width: 768px) {
   .whoami-name::after {
     display: none;
   }
@@ -238,13 +230,18 @@
 }
 @media (max-width: 768px) {
   .whoami-text code p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     white-space: normal;
   }
 }
 @media (max-width: 576px) {
   .whoami-text code p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .whoami-text code p {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 992px) {
