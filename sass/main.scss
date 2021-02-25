@@ -2,6 +2,7 @@
 @use './layouts/navbar';
 @use './layouts/whoami';
 @use './layouts/project-section';
+@use './layouts/skills-section';
 
 body {
   background-color: $baltic-sea;

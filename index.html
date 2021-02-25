@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
+    />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
@@ -213,7 +218,7 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       class="btn btn-outline-primary project-btn demo-btn"
-                      href="https://theweeklyextra.herokuapp.com/"
+                      href="/"
                     >
                       Live Demo
                     </a>
@@ -222,7 +227,41 @@
               </div>
           </div>
         </section>
+
+        <section id="skills-section" class="skills-section">
+          <div class="section-header skills-header mb-4"></div>
+          <!-- <div class="skills-heading frontend-heading">Front-End</div> -->
+          <div class="skills-group frontend-skills ">              
+            <i class="skill devicon-html5-plain" data-bs-toggle="tooltip" data-placement="top" title="HTML"></i>
+            <i class="skill devicon-css3-plain" data-bs-toggle="tooltip" data-placement="top" title="CSS"></i>
+            <i class="skill devicon-sass-original"data-bs-toggle="tooltip" data-placement="top" title="Sass"></i>
+            <i class="skill devicon-javascript-plain" data-bs-toggle="tooltip" data-placement="top" title="ES6+"></i>
+            <i class="skill devicon-react-original" data-bs-toggle="tooltip" data-placement="top" title="ReactJS"></i>
+            <i class="skill devicon-webpack-plain" data-bs-toggle="tooltip" data-placement="top" title="Webpack"></i>
+          </div>
+          <!-- <div class="skills-heading">Back-End</div> -->
+          <div class="skills-group backend-skill">
+            <i class="skill devicon-nodejs-plain" data-bs-toggle="tooltip" data-placement="top" title="NodeJS"></i>
+            <i class="skill devicon-mysql-plain-wordmark" data-bs-toggle="tooltip" data-placement="top" title="MySQL"></i>
+            <i class="skill devicon-mongodb-plain-wordmark" data-bs-toggle="tooltip" data-placement="top" title="MongoDB"></i>
+          </div>
+          <!-- <div class="skills-heading">Other Tools</div> -->
+          <div class="skills-group tools-skills">
+            <i class="skill devicon-git-plain" data-bs-toggle="tooltip" data-placement="bottom" title="Git"></i>
+            <i class="skill devicon-github-original" data-bs-toggle="tooltip" data-placement="bottom" title="Github"></i>
+            <i class="skill devicon-xd-line" data-bs-toggle="tooltip" data-placement="bottom" title="Adobe XD"></i>
+            <i class="skill devicon-illustrator-line" data-bs-toggle="tooltip" data-placement="bottom" title="Illustrator"></i>
+            <i class="skill devicon-photoshop-line" data-bs-toggle="tooltip" data-placement="bottom" title="Photoshop"></i>
+          </div>
+        </section>
       </div>
     </div>
+    <script>
+      // boostrap tooltip function
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
   </body>
 </html>

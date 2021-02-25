@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.skills-section {
+  color: white;
+  text-align: center;
+  margin-bottom: 5rem;
+  .skills-header {
+    &::before {
+      @include sectionHeader;
+      content: "<skills>";
+    }
+  }
+  .skills-group {
+    margin-bottom: 1.7rem;
+  }
+  .skill {
+    cursor: pointer;
+    font-size: 3.7rem;
+    filter: drop-shadow(7px 7px black);
+    padding: 1rem;
+    &:hover {
+      color: $rose-red;
+      transition: ease-in 0.15s;
+    }
+    @media (max-width: $md-screen) {
+      font-size: 2.9rem;
+      padding: 0.4rem;
+    }
+    @media (max-width: $sm-screen) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.tooltip .tooltip-inner {
+  color: $rose-red;
+  padding: 30px 20px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  width: 9.5rem;
+  @media (max-width: $sm-screen) {
+    font-size: 1rem;
+    width: 8rem;
+    padding: 20px 10px;
+  }
+  @media (max-width: $xs-screen) {
+    font-size: 0.8rem;
+    width: 6rem;
+    padding: 10px 5px;
+  }
+}
