@@ -1,0 +1,116 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.contact-section {
+  margin-bottom: 5rem;
+  .contact-header {
+    &::before {
+      @include sectionHeader;
+      content: "<contact me>";
+    }
+  }
+  .contact-text {
+    color: $light-gray;
+    @media (max-width: $sm-screen) {
+      text-align: center;
+    }
+    h2 {
+      font-size: 3rem;
+      color: $rose-red;
+      font-weight: 800;
+      @media (max-width: $md-screen) {
+        font-size: 2rem;
+      }
+      @media (max-width: $sm-screen) {
+        font-size: 1.7rem;
+      }
+    }
+    .contact-text-btns {
+      font-size: 3.3rem;
+      filter: drop-shadow(7px 7px black);
+      a {
+        text-decoration: none;
+        color: $light-gray;
+        margin-right: 0.7rem;
+        &:hover {
+          color: $rose-red;
+          transition: ease-in-out 0.2s;
+        }
+      }
+      @media (max-width: $lg-screen) {
+        margin-bottom: 3rem;
+      }
+      @media (max-width: $md-screen) {
+        font-size: 2.9rem;
+      }
+      @media (max-width: $sm-screen) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+.contact-form {
+  @media (max-width: $md-screen) {
+    font-size: 0.8rem;
+  }
+  .form-item {
+    color: $light-gray;
+    .form-control {
+      background-color: $baltic-sea;
+      color: $light-gray;
+      &:focus,
+      &:active {
+        border-color: $rose-red;
+        box-shadow: 0 0 0 0.1rem $deep-purple;
+      }
+    }
+    input[type="email"],
+    input[type="name"] {
+      @media (max-width: $md-screen) {
+        height: calc(3rem + 2px);
+      }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      border: 1px solid $deep-purple;
+      box-shadow: 0 0 0 0.1rem $deep-purple;
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: white;
+    }
+    .form-message {
+      height: calc(10rem + 2px);
+      @media (max-width: $md-screen) {
+        height: calc(8rem + 2px);
+      }
+    }
+  }
+  .form-btn {
+    background-color: $ruby;
+    width: 10rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 0.5rem;
+    &:hover {
+      background-color: $ksu-purple;
+      color: white;
+    }
+    @media (max-width: $lg-screen) {
+      width: 7rem;
+      font-size: 1.1rem;
+    }
+    @media (max-width: $md-screen) {
+      width: 5rem;
+      font-size: 0.9rem;
+      padding: 0.3rem;
+    }
+  }
+}
