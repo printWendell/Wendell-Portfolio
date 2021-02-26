@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+footer {
+  color: $light-gray;
+  text-align: center;
+  font-size: 1.3rem;
+  @media (max-width: $md-screen) {
+    font-size: 1rem;
+  }
+  hr {
+    color: $ruby;
+  }
+  .footer-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

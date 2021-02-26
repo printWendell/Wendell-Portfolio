@@ -716,6 +716,24 @@
   }
 }
 
+footer {
+  color: #d8d5d5;
+  text-align: center;
+  font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+footer hr {
+  color: #e7165a;
+}
+footer .footer-text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 body {
   background-color: #1d1b24;
   color: white;
