@@ -307,9 +307,15 @@
     border-color: rgba(255, 255, 255, 0.75);
   }
 }
-.project-section-header {
-  color: white;
+.project-section {
+  margin-bottom: 4.5rem;
 }
+@media (max-width: 768px) {
+  .project-section {
+    margin-bottom: 2rem;
+  }
+}
+
 .project-section-header::before {
   display: flex;
   flex-direction: row;
@@ -322,17 +328,19 @@
   letter-spacing: 3px;
   clear: both;
   text-shadow: 10px 10px 2px black;
+  margin-bottom: 2rem;
   content: "<projects>";
 }
 @media (max-width: 768px) {
   .project-section-header::before {
     font-size: 10vw;
-    margin: 1.6rem 0;
+    margin: 1rem 0;
   }
 }
 @media (max-width: 576px) {
   .project-section-header::before {
     font-size: 12vw;
+    text-shadow: 6px 6px 1px black;
   }
 }
 
@@ -495,7 +503,12 @@
 .skills-section {
   color: white;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
+}
+@media (max-width: 768px) {
+  .skills-section {
+    margin-bottom: 2rem;
+  }
 }
 .skills-section .skills-header::before {
   display: flex;
@@ -509,17 +522,19 @@
   letter-spacing: 3px;
   clear: both;
   text-shadow: 10px 10px 2px black;
+  margin-bottom: 2rem;
   content: "<skills>";
 }
 @media (max-width: 768px) {
   .skills-section .skills-header::before {
     font-size: 10vw;
-    margin: 1.6rem 0;
+    margin: 1rem 0;
   }
 }
 @media (max-width: 576px) {
   .skills-section .skills-header::before {
     font-size: 12vw;
+    text-shadow: 6px 6px 1px black;
   }
 }
 .skills-section .skills-group {
@@ -570,7 +585,12 @@
 }
 
 .contact-section {
-  margin-bottom: 5rem;
+  margin-bottom: 4.5rem;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    margin-bottom: 2rem;
+  }
 }
 .contact-section .contact-header::before {
   display: flex;
@@ -584,17 +604,19 @@
   letter-spacing: 3px;
   clear: both;
   text-shadow: 10px 10px 2px black;
+  margin-bottom: 2rem;
   content: "<contact me>";
 }
 @media (max-width: 768px) {
   .contact-section .contact-header::before {
     font-size: 10vw;
-    margin: 1.6rem 0;
+    margin: 1rem 0;
   }
 }
 @media (max-width: 576px) {
   .contact-section .contact-header::before {
     font-size: 12vw;
+    text-shadow: 6px 6px 1px black;
   }
 }
 .contact-section .contact-text {

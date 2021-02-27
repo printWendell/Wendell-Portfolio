@@ -4,7 +4,7 @@
 .skills-section {
   color: white;
   text-align: center;
-  margin-bottom: 5rem;
+  @include sectionsStyles;
   .skills-header {
     &::before {
       @include sectionHeader;

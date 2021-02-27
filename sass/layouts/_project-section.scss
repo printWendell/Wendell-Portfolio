@@ -1,8 +1,11 @@
 @use '../abstracts/variables' as *;
 @use "../abstracts/mixins" as *;
 
+.project-section {
+  @include sectionsStyles;
+}
+
 .project-section-header {
-  color: white;
   &::before {
     @include sectionHeader;
     content: "<projects>";

@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .contact-section {
-  margin-bottom: 5rem;
+  @include sectionsStyles;
   .contact-header {
     &::before {
       @include sectionHeader;
