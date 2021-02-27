@@ -338,14 +338,18 @@
 
 .project {
   position: relative;
-  width: 50%;
   cursor: pointer;
   margin-bottom: 3.5rem;
 }
 @media (max-width: 768px) {
   .project {
     margin: 2rem auto;
-    width: 80%;
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  .project {
+    margin-bottom: 1.5rem;
   }
 }
 .project:hover .project-img {
