@@ -101,5 +101,14 @@ li {
     color: $ruby;
     font-size: 1.5rem;
     font-style: italic;
+    @media (max-width: $md-screen) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: $sm-screen) {
+      font-size: 1rem;
+    }
+    @media (max-width: $xs-screen) {
+      font-size: 15px;
+    }
   }
 }

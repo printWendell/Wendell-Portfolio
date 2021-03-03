@@ -687,6 +687,21 @@ li {
   font-size: 1.5rem;
   font-style: italic;
 }
+@media (max-width: 768px) {
+  .project-whys .project-whys--subheader {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .project-whys .project-whys--subheader {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .project-whys .project-whys--subheader {
+    font-size: 15px;
+  }
+}
 
 .skills-section {
   color: white;
