@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Wendell Emile</title>
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="homepage-nav">
+        <nav class="homepage-navbar navbar navbar-expand-md navbar-dark mb-5 container">
+            <a href="/" class="navbar-brand">&#60/W&#62</a>
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler"
+                aria-expanded="false"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end burger-menu"
+              id="navbarToggler"
+            >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <main class="project-details container">        
+        <div class="project-details--header mb-5">
+          <h1>TheWeeklyExtra</h1>
+          <p>A react Javascript website built with NodeJS and MySQL</p>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://theweeklyextra.herokuapp.com/"
+            type="button"
+            class="btn btn-outline-primary about-btn portfolio-btn"
+          >
+            <i class="fas fa-sign-out-alt"></i> Visit The Website</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/printWendell/TheWeeklyExtra"
+            class="btn btn-outline-primary about-btn portfolio-btn"
+          >
+            <i class="fab fa-github"></i> View Code</a
+          >
+        </div>
+        <div class="project-details--video">
+          <video src="../videos/theweeklyextra.mp4" autoplay loop></video>
+        </div>
+        <div class="project-details--info mb-5">
+          <h2 class="details-header">About this project</h2>
+          <div class="details-info">
+            <p>
+              Using the
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://newsapi.org/"
+                class="project-link"
+                >NewsAPI</a
+              >, TheWeeklyExtra aggregates news articles from various news
+              outlets. Using a NodeJS server, calls to the API are handled with
+              HTTP requests which are then sent to the client to be
+              rendered/styled by react js and CSS/Material-UI. Those requests
+              include; getting new articles, getting articles by category,
+              getting articles based on search queries.
+            </p>
+            <p>
+              Users are also allowed to save articles to a ClearDB database
+              provided by Heroku. However, these routes are protected from
+              unauthorized users. Users register using token-based
+              authentication provided by JWTs which is then saved to the browser
+              using cookies. Once registered and saved into the ClearDB, users
+              can save any article into their profile.
+            </p>
+          </div>
+          <div class="details-technologies mb-5">
+            <h2 class="details-header">Technologies</h2>
+            <ul class="details-technologies_list projects-list">
+              <li>NewsAPI</li>
+              <li>NodeJS/Express</li>
+              <li>JWT</li>
+              <li>MySQL/ClearDB</li>
+              <li>ReactJS</li>
+              <li>CSS/Material-UI</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-whys mb-5">
+          <h2 class="details-header">Why?</h2>
+          <h5 class="project-whys--subheader">--Why did i build it?</h5>
+          <p>
+            Right before the inception of this site (which would have been
+            around October 2020), there was uncertainty about the future. What
+            will life be like after a pandemic? When can we expect a vaccine?
+            What will the job outlook be like? Are the NY Giants finally going
+            to make the playoffs? All important questions about the future. As a
+            way to keep up with current events, I wanted to keep some tab on
+            national news. However, I didn't want to get my information from one
+            or two news sources nor, did I want to sift through several news
+            outlets. Why? Because I'm lazy. That left news aggregators like
+            Google News or AllTop. However, I didn't like the UI from either
+            site. I felt there was a little too much going on onscreen, which
+            gave off this feeling of being "cramped." So now I had issues with
+            both single news outlets and news aggregators. Thus, the idea of
+            "hey, maybe I should build my news aggregator" was born! One that
+            had the styles similar to apnews.com but grabbed from various news
+            sites similar to what Google News does.
+          </p>
+          <p>
+            However!.... I needed a name. It "needed" to give off a feeling like
+            your reading a newspaper. You know, the one that people might get at
+            the local grocery store once a week. I also want it to give off the
+            same feeling as an older newspaper. The ones where newspaper boys
+            would hold while yelling "Extra!, Extra!, Read all about it!" Why?
+            No reason. I just wanted to give it a feeling of old newspapers
+            turning modern. Wait! "Week," "Extra"....."ExtraWeeklyNews?" No,
+            that doesn't roll off the tongue. Hmmmmm..... Week?, Extra?,
+            "TheWeeklyExtra"..... Perfect.
+          </p>
+          <!-- <h5 class="project-whys--subheader">--Why ReactJS/NodeJS?</h5>
+          <p>
+            Seeing how this app will call an api and allow user authentication,
+            using server-side code was at the time was the most logical way of
+            going forward. 
+          </p> -->
+        </div>
+        <div class="project-errors">
+          <h2 class="details-header">Problems/Bugs as of now</h2>
+          <ul class="project-errors--list projects-list">
+            <li>
+              <p>
+                Initial page load is still pretty slow. This is likely due to
+                heroku's dynos sleeping
+              </p>
+            </li>
+            <li>
+              <p>The favicon is really small and low quality</p>
+            </li>
+            <li>
+              <p>Logo should be resized</p>
+            </li>
+            <li>
+              <p>The bookmarked logo disappears after page reload</p>
+            </li>
+            <li>
+              <p>Article pictures and titles are too large on mobile devices</p>
+            </li>
+            <li>
+              <p>
+                Cannot generate JWT refresh tokens, forcing users to login again
+                after a day. This sounds like it would lead to terrible UX and
+                security issues
+              </p>
+            </li>
+            <li>
+              <p>
+                Realtionship between user and saved article should be changd to
+                avoid duplications in MySQL. Two users can save the same article
+                and that article would appear twice in the SQL table. That's
+                probably not a good thing
+              </p>
+            </li>
+            <li>
+              <p>
+                Lack of loading animations or spinners sites doesn't give me the
+                same UX I get when I'm on other news sites. When the page is
+                loading, how do I know if the articles are actually getting
+                rendered? Better feedback could improve experience for users
+                with slower internet
+              </p>
+            </li>
+            <li>
+              <p>Many, many more that I'm not thinking of</p>
+            </li>
+          </ul>
+        </div>      
+      </main>
+      <footer>
+        <hr />
+        <div class="footer-text container">
+          Made with love @ 2021 Wendell Emile
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -510,6 +510,184 @@
   box-shadow: 10px 10px black;
 }
 
+main {
+  margin-bottom: 5rem;
+}
+
+.project-details {
+  color: #d8d5d5;
+  line-height: 2rem;
+  word-spacing: 0.15rem;
+}
+@media (max-width: 576px) {
+  .project-details {
+    word-spacing: 0.1rem;
+  }
+}
+.project-details .project-details--header h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #818181;
+  font-size: 7.5vw;
+  font-weight: bolder;
+  opacity: 0.11;
+  letter-spacing: 3px;
+  clear: both;
+  text-shadow: 10px 10px 2px black;
+  margin-bottom: 2rem;
+  font-size: 6vw;
+  opacity: 0.11;
+}
+@media (max-width: 768px) {
+  .project-details .project-details--header h1 {
+    font-size: 10vw;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 576px) {
+  .project-details .project-details--header h1 {
+    font-size: 12vw;
+    text-shadow: 6px 6px 1px black;
+  }
+}
+.project-details .project-details--header h1::before {
+  content: "<";
+}
+.project-details .project-details--header h1::after {
+  content: "/>";
+}
+@media (max-width: 992px) {
+  .project-details .project-details--header h1 {
+    font-size: 8.5vw;
+  }
+}
+@media (max-width: 576px) {
+  .project-details .project-details--header h1 {
+    font-size: 9vw;
+  }
+}
+@media (max-width: 480px) {
+  .project-details .project-details--header h1 {
+    font-size: 7vw;
+  }
+}
+.project-details .portfolio-btn {
+  border-color: #e7165a;
+  color: #e7165a;
+  margin: 1.2rem 0rem 0rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: ease-out 0.3s;
+}
+.project-details .portfolio-btn:hover {
+  background-color: white;
+  color: #e7165a;
+}
+@media (max-width: 1200px) {
+  .project-details .portfolio-btn {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 992px) {
+  .project-details .portfolio-btn {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .project-details .portfolio-btn {
+    margin: 0.9rem 0rem 0rem 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .project-details .portfolio-btn {
+    font-size: 0.7rem;
+    margin: 0.5rem 0rem 0rem 0.7rem;
+  }
+}
+.project-details .project-details--video {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.project-details .project-details--video video {
+  width: 80%;
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .project-details .project-details--video video {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .project-details {
+    font-size: 1rem;
+  }
+}
+
+.details-header {
+  margin: 2.5rem 0rem;
+  color: var(--ruby);
+  font-size: 2.5rem;
+  width: 40vw;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+@media (max-width: 768px) {
+  .details-header {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .details-header {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.project-link {
+  color: #be1c68;
+  text-decoration: none;
+  transition: ease-out 0.2s;
+}
+.project-link:hover {
+  color: #e7165a;
+}
+
+p,
+li {
+  font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+  p,
+li {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  p,
+li {
+    font-size: 14px;
+  }
+}
+
+.projects-list {
+  list-style: circle;
+  padding: 0 1.4em;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.project-whys .project-whys--subheader {
+  color: #e7165a;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
 .skills-section {
   color: white;
   text-align: center;

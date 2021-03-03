@@ -1,0 +1,105 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+main {
+  margin-bottom: 5rem;
+}
+
+.project-details {
+  color: $light-gray;
+  line-height: 2rem;
+  word-spacing: 0.15rem;
+  @media (max-width: $sm-screen) {
+    word-spacing: 0.1rem;
+  }
+  .project-details--header {
+    h1 {
+      @include sectionHeader;
+      font-size: 6vw;
+      opacity: 0.11;
+      &::before {
+        content: "<";
+      }
+      &::after {
+        content: "/>";
+      }
+      @media (max-width: $lg-screen) {
+        font-size: 8.5vw;
+      }
+      @media (max-width: $sm-screen) {
+        font-size: 9vw;
+      }
+      @media (max-width: $xs-screen) {
+        font-size: 7vw;
+      }
+    }
+  }
+
+  .portfolio-btn {
+    @include projectBtn;
+  }
+
+  .project-details--video {
+    text-align: center;
+    margin-bottom: 4rem;
+    video {
+      width: 80%;
+      border-radius: 5px;
+      @media (max-width: $sm-screen) {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: $md-screen) {
+    font-size: 1rem;
+  }
+}
+.details-header {
+  margin: 2.5rem 0rem;
+  color: var(--ruby);
+  font-size: 2.5rem;
+  width: 40vw;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  @media (max-width: $md-screen) {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  @media (max-width: $xs-screen) {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.project-link {
+  color: $rose-red;
+  text-decoration: none;
+  transition: ease-out 0.2s;
+  &:hover {
+    color: $ruby;
+  }
+}
+p,
+li {
+  font-size: 1.3rem;
+  @media (max-width: $md-screen) {
+    font-size: 1rem;
+  }
+  @media (max-width: $xs-screen) {
+    font-size: 14px;
+  }
+}
+.projects-list {
+  list-style: circle;
+  padding: 0 1.4em;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+.project-whys {
+  .project-whys--subheader {
+    color: $ruby;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+}

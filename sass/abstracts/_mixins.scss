@@ -29,3 +29,30 @@
     text-shadow: 6px 6px 1px black;
   }
 }
+
+@mixin projectBtn {
+  border-color: $ruby;
+  color: $ruby;
+  margin: 1.2rem 0rem 0rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: ease-out 0.3s;
+  &:hover {
+    background-color: white;
+    color: $ruby;
+  }
+  @media (max-width: $xl-screen) {
+    font-size: 1.2rem;
+  }
+  @media (max-width: $lg-screen) {
+    margin-top: 1rem;
+    margin-bottom: 0px;
+  }
+  @media (max-width: $sm-screen) {
+    margin: 0.9rem 0rem 0rem 1rem;
+  }
+  @media (max-width: $xs-screen) {
+    font-size: 0.7rem;
+    margin: 0.5rem 0rem 0rem 0.7rem;
+  }
+}
