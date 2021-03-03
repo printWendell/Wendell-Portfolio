@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Wendell Emile</title>
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="homepage-nav">
+        <nav class="homepage-navbar navbar navbar-expand-md navbar-dark mb-5 container">
+            <a href="/" class="navbar-brand">&#60/W&#62</a>
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler"
+                aria-expanded="false"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end burger-menu"
+              id="navbarToggler"
+            >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <main class="project-details container">        
+        <div class="project-details">
+        <div class="project-details--header mb-5">
+          <h1>Slowpoke-dex</h1>
+          <p>A NodeJS website built with the PokeAPI</p>         
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://slowpoke-dex.herokuapp.com/"
+            type="button"
+            class="btn btn-outline-primary about-btn portfolio-btn"
+          >
+            <i class="fas fa-sign-out-alt"></i> Visit The Website</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/printWendell/slowpoke-dex"
+            class="btn btn-outline-primary about-btn portfolio-btn"
+          >
+            <i class="fab fa-github"></i> View Code</a
+          >
+        </div>
+        <div class="project-details--video">
+          <video src="../videos/slowpokedex.mp4" autoplay loop></video>
+        </div>
+        <div class="project-details--info">
+          <h2 class="details-header">About this project</h2>
+          <div class="details-info">
+            <p>
+              Using the
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://pokeapi.co/"
+                class="project-link"
+                >PokeApi</a
+              >, Slowpoke-dex fetches pokemon data in JSON. The JSON is then sent from the Node server to the client to then be mapped by EJS, and styled with CSS/bootstrap. The website also uses a move, items, and sprites dataset provided by
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/fanzeyi/pokemon.json"
+                class="project-link"
+                >Fanzeyi</a
+              >
+              to be matched to the accompanying pokemon. Each pokemon is shown with their base stats, Pokedex entries, evolutions, types, weaknesses, abilities, moves, and more information found in most Pokedex.
+            </p>
+          </div>
+          <div class="details-technologies">
+            <h2 class="details-header">Technologies</h2>
+            <ul class="details-technologies_list projects-list">
+              <li>NodeJS/Express</li>
+              <li>HTML</li>
+              <li>CSS/Bootstrap</li>
+              <li>JavaScript/EJS</li>
+              <li>PokeAPI</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-whys mb-5">
+          <h2 class="details-header">Why?</h2>
+          <h5 class="project-whys--subheader">--Why did i build it?</h5>
+          <p>
+            I love Pokemon. That's all the justification I need to build this
+            project.
+          </p>
+          <p>
+            Honesty while replaying Pokemon Emerald(the best generation btw), I,
+            like almost every player, constantly saw myself looking at online
+            pokedexs to get info on new pokemon. Though most of these pokedexs
+            are simple to follow, I felt like they can be even simpler, and
+            highlight information only relevant to the video games. Thus
+            Slowpoke-dex was made. A website that allows pokemon players the
+            ability to quickly look up accurate stats about their beloved pocket
+            monsters.
+          </p>
+
+          <p>Gotta Catch Em' All</p>
+          <h5 class="project-whys--subheader">--Why EJS/NodeJS?</h5>
+          <p>
+            Because the quickest way for me to get most of the useful pokemon data was to call an API(i.e. the PokeAPI), I felt there were only three options for me to render the incoming JSON data to the client. A) Using a framework like React. B) Using vanilla Javascript to fetch the data to then be rendered in HTML. C) Using NodeJS to fetch data serverside to then be rendered client-side using a templating engine like EJS or Pug. Using a framework like ReactJS felt like a bit of overkill for a project as simple as this, and I didn't want to torture myself trying to use vanilla JavaScript to retrieve all the data the PokeAPI had to offer. That left me with using NodeJS and a templating engine.
+          </p>
+          <p>
+            Using Node and EJS, I was able to set up routes with HTTP requests to send data to the client. Easier to set up than ReactJS and simpler to render than vanilla JS. That perfect sweet spot. Finally, I only picked EJS simply because I liked the syntax more than Pug or Haml.
+          </p>
+        </div>
+        <div class="project-errors">
+          <h2 class="details-header">Problems/Bugs as of now</h2>
+          <ul class="project-errors--list projects-list">
+            <li>
+              <p>
+                Initial page load is still pretty slow. This is likely due to
+                heroku's dynos sleeping
+              </p>
+            </li>
+            <li>
+              <p>There is no favicon</p>
+            </li>
+            <li>
+              <p>There is way too much empty space between the moves table</p>
+            </li>
+            <li>
+              <p>
+                Some pokemon's pokedex entries seem to include weird symbols
+                that need to be removed
+              </p>
+            </li>
+            <li>
+              <p>
+                The evolution chain styling needs to be a lot easier to read.
+                That includes more spacing between the arrows and words and a
+                complete do over of the eevee evolution chain, because wow is it
+                horrible to look at
+              </p>
+            </li>
+            <li>
+              <p>
+                Some of the EJS pages such as evolution.ejs, and moves.ejs are
+                extremely difficult to read. Too much of the ejs syntax has been
+                mixed with HTML, making the page incredibly confusing to look at
+              </p>
+            </li>
+            <li>
+              <p>
+                Other pages such as pokemon.ejs, and types.ejs are too bloated
+                and need to be spit up to avoid unreadibility
+              </p>
+            </li>
+            <li>
+              <p>This didn't really need bootstrap</p>
+            </li>
+            <li>
+              <p>Many, many more that I'm not thinking of</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </main>
+      <footer>
+        <hr />
+        <div class="footer-text container">
+          Made with love @ 2021 Wendell Emile
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
