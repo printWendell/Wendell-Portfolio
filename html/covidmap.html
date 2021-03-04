@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Wendell Emile</title>
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="homepage-nav">
+        <nav class="homepage-navbar navbar navbar-expand-md navbar-dark mb-5 container">
+            <a href="/" class="navbar-brand">&#60/W&#62</a>
+            <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler"
+                aria-expanded="false"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end burger-menu"
+              id="navbarToggler"
+            >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <main class="project-details container">        
+        <div class="project-details">
+        <div class="project-details--header mb-5">
+          <h1>Covid19-Tracker</h1>
+          <p>Basic Leaflet map that tracks Covid-19 cases/deaths</p>
+          <a
+            <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://printwendell.github.io/Covid19-Tracker/"
+            type="button"
+            class="btn btn-outline-primary about-btn portfolio-btn"
+          >
+            <i class="fas fa-sign-out-alt"></i> Visit The Website</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/printWendell/Covid19-Tracker"
+            class="btn btn-outline-primary about-btn portfolio-btn"
+          >
+            <i class="fab fa-github"></i> View Code</a
+          >
+        </div>
+        <div class="project-details--video">
+          <video src="../videos/covid.mp4" autoplay loop></video>
+        </div>
+        <div class="project-details--info">
+          <h2 class="details-header">About this project</h2>
+          <div class="details-info">
+            <p>
+              Using the
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://corona.lmao.ninja/"
+                class="project-link"
+                >Disease.sh</a
+              >
+              api and basic CSS, this tracker fetches every country's covid
+              cases, deaths, recoveries, and flag and visually represents those
+              cases using the LeafletJS map.
+            </p>
+          </div>
+          <div class="details-technologies">
+            <h2 class="details-header">Technologies</h2>
+            <ul class="details-technologies_list projects-list">
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>LeafletJS</li>
+              <li>DIsease.sh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-whys mb-5">
+          <h2 class="details-header">Why?</h2>
+          <h5 class="project-whys--subheader">--Why did i build it?</h5>
+          <p>
+            The idea of this project came around what was at the time the height
+            of the Covid-19. Naturally, there was a lot of dread and uncertainty
+            spewing from the cultural zeitgeist, and every day the total cases
+            and deaths across the globe were growing terrifyingly higher. One
+            would assume that when a pandemic strikes, it brings along a wave of
+            unease and confusion. Because of this, I wanted to get a nice look
+            at the "numbers behind the disease." Of course, there was already
+            plenty of websites that mapped the Covid-19, so I was already late
+            to the punch. However, prominent sites like the
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://coronavirus.jhu.edu/map.html"
+              class="project-link"
+              >John Hopkin Coronavirus Map</a
+            >
+            were incredibly laggy on my smaller personal devices like my phone
+            and laptop, while other sites like the
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://covid.cdc.gov/covid-data-tracker/#datatracker-home"
+              class="project-link"
+            >
+              CDC Data Tracker</a
+            >
+            could have been a little more visually interesting.
+          </p>
+
+          <p>
+            Thus the quest to build my own (yet not as informative) Covid-19 Map
+            was set. One that would not lag my phone due to all the incoming
+            requests but still provide enough information to get a broader grasp
+            of the damage Covid has brought. Simple, yet informative, that was the
+            mission.
+          </p>
+        </div>
+        <div class="project-errors">
+          <h2 class="details-header">Problems/Bugs as of now</h2>
+          <ul>
+            <li>
+              <p>
+                Cases circles need to change sizes to provide for better representation. Most of the countries' circles are similar sizes from one another. Needs more variance
+              </p>
+            </li>
+            <li>
+              <p>The favicon is really small and low quality</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </main>
+      <footer>
+        <hr />
+        <div class="footer-text container">
+          Made with love @ 2021 Wendell Emile
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
