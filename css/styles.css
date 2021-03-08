@@ -9,9 +9,10 @@
   font-weight: 900;
   font-size: 3.1rem;
   letter-spacing: 3.6px;
+  transition: ease-out 0.25s;
 }
 .navbar-dark .navbar-brand:hover {
-  text-shadow: 2px 2px #ff0000;
+  text-shadow: 10px 10px 2px black;
   transition: ease-in 0.15s;
 }
 @media (max-width: 768px) {
