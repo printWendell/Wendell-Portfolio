@@ -37,6 +37,9 @@ main {
 
   .portfolio-btn {
     @include projectBtn;
+    @media (max-width: $xs-screen) {
+      font-size: 0.7rem;
+    }
   }
 
   .project-details--video {

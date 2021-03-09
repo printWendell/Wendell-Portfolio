@@ -498,8 +498,8 @@
 }
 @media (max-width: 480px) {
   .project-btn {
-    font-size: 0.7rem;
-    margin: 0.5rem 0rem 0rem 0.7rem;
+    font-size: 0.9rem;
+    margin: 0.5rem 0rem 0.4rem 0.7rem;
   }
 }
 
@@ -604,8 +604,13 @@ main {
 }
 @media (max-width: 480px) {
   .project-details .portfolio-btn {
+    font-size: 0.9rem;
+    margin: 0.5rem 0rem 0.4rem 0.7rem;
+  }
+}
+@media (max-width: 480px) {
+  .project-details .portfolio-btn {
     font-size: 0.7rem;
-    margin: 0.5rem 0rem 0rem 0.7rem;
   }
 }
 .project-details .project-details--video {
